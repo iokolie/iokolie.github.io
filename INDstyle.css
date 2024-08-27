@@ -1,0 +1,502 @@
+body{
+    background-image: url('img/BG.jpg');
+    background-size: cover; /* Adjust to your preference */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  }
+  
+
+  /* Other styles for your content */
+  .content {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+@font-face{
+    font-family: 'font1';
+    src: url('Fonts/Montserrat/Montserrat-VariableFont_wght.ttf')
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: font2;
+    src: url('Fonts/Titillium_Web/TitilliumWeb-Bold.ttf')
+    format('opentype');
+}
+
+@font-face{
+    font-family: font3;
+    src: url('Fonts/Lexend/Lexend-VariableFont_wght.ttf')
+    format('opentype');   
+}
+
+@font-face{
+    font-family: 'font4';
+    src: url('Fonts/arialic-hollow/Arialic\ Hollow.ttf')
+    format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav{
+    display: flex;
+}
+
+.heart{
+    position: relative;
+    width: 50px;
+    height: 45px;
+    left: 10%;
+    margin-top: 2%;
+}
+
+.heart::before,.heart::after{
+    position: absolute;
+    content: "";
+    left: 20px;
+    top: 0;
+    width: 20px;
+    background: teal;
+    height: 32px;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart::after{
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+.logo{
+    position: relative;
+    left: 10%;
+    font-family: Montserrat;
+    font-size: 130%;
+}
+
+.nav-con{
+    width: 50%;
+    height: 5%;
+    margin-left: 3%;
+    font-family: font1;
+    font-weight: bold;
+    position: relative;
+    left: 30%;
+    margin-top: 1.5%;
+    
+}
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.nav-items{
+    float: left;
+    text-decoration: none; 
+    color: black;
+    margin-left: 7%;
+    font-size: 110%;
+}
+
+
+
+.links{
+    text-decoration: none; 
+    color: black
+}
+
+.links:hover{
+    color: rgb(14, 155, 108);
+    transition: all 0.5s ease;
+}
+
+.land-con{
+    display: flex;
+    height: 100%;
+}
+
+.text-con{
+    position: relative;
+    left: 10%;
+    top: 10%;
+    float: left;
+}
+
+.large-txt{
+    font-size: 420%;
+    width: 45%;
+    font-family: font3;
+}
+
+.small-txt-bold{
+    font-family: font3;
+    font-size: 120%;
+    width: 48%;
+}
+
+.button{
+    background-color: rgb(14, 155, 108);
+    color: white;
+    width: 20%;
+    height: 8%;
+    border: none;
+    font-size: 100%;
+    font-family: font3;
+}
+
+.button:hover{
+    background-color: white;
+    color: rgb(14, 155, 108);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.img-con{
+    background-color: rgb(14, 155, 108);
+    width: 15%;
+    height: 50%;
+    position: relative;
+    top: 10%;
+}
+
+.img1{
+    position: relative;
+    left: 7%;
+    top: 5%;
+    height: 190%;
+}
+
+.icon-con{
+    width: 30%;
+    height: 20%;
+    position: relative;
+    top: 10%;
+    display: flex;
+}
+
+.txt-con2{
+    position: relative;
+    font-family: font1;
+    width: 60%;
+}
+
+.icon{
+    height: 80%;
+    position: relative;
+    padding-right: 10%;
+}
+
+.tiny-txt{
+    width: 90%;
+}
+
+.big-con-2{
+    background-color: white;
+    position: relative;
+    top: 15%;
+    height: 200%;
+}
+
+.flex{
+    display: flex;
+    height: 45%;
+    
+}
+
+.img3{
+    height: 86%;
+    position: relative;
+    bottom: 0%;
+}
+
+.img5{
+    position: relative;
+    height: 68%;
+    bottom: 19%;
+    margin-left: 1%;
+}
+
+.img-con2{
+    height: 65%;
+    position: relative;
+    left: 10%;
+    top: 12%;
+}
+
+.text-con2{
+    height: 25%;
+    width: 65%;
+    font-family: font3;
+    background-color: white;
+    position: relative;
+    left: 35%;
+    bottom: 18.5%;
+    padding-top: 0.5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 7%;
+    box-shadow: 2px 2px 8px 4px rgba(0,0,0,0.2);
+}
+
+.vid-stuff{
+    height: 50%;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(14, 155, 108);
+    border-radius: 50%;
+    position: relative;
+    z-index: 40;
+    left: 53%;
+    float: left;
+    top: 12%;
+}
+
+.triangle{
+    
+    width: 0;
+    height: 0;
+    border-top: 12.5px solid transparent;
+    border-left: 20px solid rgb(255, 255, 255);
+    border-bottom: 12.5px solid transparent;
+    z-index: 40;
+    margin-left: 5px;
+}
+
+.circle:hover{
+    background-color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+.line-vid{
+    width: 40%;
+    position: relative;
+    height: 6%;
+    border: none;
+    background-color: black;
+    float: left;
+    top: 29%;
+    right: 5%;
+}
+
+
+.text-2{
+    float: left;
+    
+}
+
+.txt-con3{
+    font-family: font3;
+    width: 35%;
+    height: 15%;
+    position: relative;
+    left: 18%;
+}
+
+.header-con{
+    margin-top: 30%;
+    margin-bottom: 10%;
+    height: 7%;
+}
+
+.header{
+    font-size: 200%;
+}
+
+.header-line{
+    width: 10%;
+    float: left;
+    margin-right: 4%;
+    height: 40%;
+    position: relative;
+    top: 100%;
+    border: 0px solid;
+    background-color: rgb(14, 155, 108);
+    border-radius: 20px;
+}
+
+.small-txt{
+    font-size: 130%;
+}
+
+.header-con2{
+    width: 50%;
+    position: relative;
+    left: 10%;
+}
+
+.header-line2{
+    width: 10%;
+    float: left;
+    margin-right: 4%;
+    margin-top: 2.5%;
+    height: 3px;
+    position: relative;
+    border: 0px solid;
+    background-color: rgb(14, 155, 108);
+    border-radius: 20px;
+}
+
+.header2{
+    font-size: 200%;
+    font-family: font3;
+    position: relative;
+}
+
+.team-con{
+    background-color: rgb(14, 155, 108);
+    height: 40%;
+    width: 84%;
+    position: relative;
+    left: 10%;
+    display: flex;
+}
+
+.big-6{
+    height: 100%;
+    width: 38%;
+}
+
+.t6{
+    font-family: font3;
+    font-size: 1500%;
+    color: white;
+    width: 20%;
+    height: 50%;
+    position: relative;
+    left: 12%;
+    bottom: 30%;
+}
+
+.t6-small{
+    font-family: font3;
+    font-size: 200%;
+    color: white;
+    width: 82%;
+    height: 50%;
+    position: relative;
+    left: 12%;
+    bottom: 45%;
+}
+
+.pfp-con{
+    width: 67%;
+    height: 100%;
+    left: 0%;
+}
+
+.pfp-row{
+    position: relative;
+    
+}
+
+.pfp-row2{
+    height: 98%;
+}
+
+
+
+.pfp1{
+    height: 50%;
+    width: 101%;
+    display: block;
+    
+}
+.pfp2{
+    height: 50%;
+    width: 102%;
+    display: block;
+}
+.pfp3{
+    height: 50%;
+    width: 100.3%;
+    display: block;
+}
+.pfp4{
+    height: 50%;
+    width: 103%;
+    display: block;
+}
+.pfp5{
+    height: 50%;
+    width: 103%;
+    display: block;
+}
+.pfp6{
+    height: 50%;
+    width: 100.3%;
+    display: block;
+}
+
+
+.container {
+    float: left;
+    position: relative;
+    width: 33.3%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(14, 155, 108);
+  }
+  
+  .container:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: font1;
+  }
+
+  .container:hover .text {
+      opacity: 1;
+      cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+

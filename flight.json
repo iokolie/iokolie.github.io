@@ -1,0 +1,17 @@
+{
+    "passengerInfo":{
+        "name": "Ify",
+        "email": "iokolie601@gmail.com",
+        "source": "Bangalore",
+        "destination": "VVSR",
+        "travelDate": "14-12-2023",
+        "pickupTime:": "4.0PM",
+        "arrivalTime": "6.0pm",
+        "fare": "18000.0"
+    },
+    "paymentInfo": {
+        "accountNo": "acc1",
+        "cardType": "DEBIT"
+    }
+    
+}
